@@ -39,7 +39,7 @@ const Container = styled.div`
 		font-weight: bold;
 		span {
 			font-weight: bolder;
-			color: #1d4ed8;
+			color: #bb5cbb;
 			font-size: 1.2rem;
 		}
 	}
