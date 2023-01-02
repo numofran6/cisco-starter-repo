@@ -26,7 +26,7 @@ const Container = styled.div`
 		height: 100%;
 		width: 100%;
 		object-fit: fill;
-		opacity: 1;
+		opacity: 0.6;
 	}
 	.description {
 		position: absolute;
