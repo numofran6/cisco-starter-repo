@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cisco-starter-repo/static/css/main.d3b50562.css",
+    "main.js": "/cisco-starter-repo/static/js/main.04cd4f8b.js",
+    "static/media/cisco.jpg": "/cisco-starter-repo/static/media/cisco.1635ecba8000ffe180dc.jpg",
+    "static/media/latency.png": "/cisco-starter-repo/static/media/latency.4d84c664388d8d817d93.png",
+    "index.html": "/cisco-starter-repo/index.html",
+    "main.d3b50562.css.map": "/cisco-starter-repo/static/css/main.d3b50562.css.map",
+    "main.04cd4f8b.js.map": "/cisco-starter-repo/static/js/main.04cd4f8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3b50562.css",
+    "static/js/main.04cd4f8b.js"
+  ]
+}
