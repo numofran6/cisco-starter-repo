@@ -10,11 +10,10 @@ export const Banner = () => {
 
 const Container = styled.div`
 	padding: 40px;
-	background-color: #ca8a04;
 	h1 {
 		font-size: 7rem;
 		text-align: left;
-		color: rgb(36, 36, 36);
+		color: #ca8a04;
 		margin: 0;
 		font-weight: bolder;
 	}
