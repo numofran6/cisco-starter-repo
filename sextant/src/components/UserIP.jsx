@@ -35,6 +35,7 @@ export const UserIP = ({ ipVersion }) => {
 
 const Container = styled.div`
 	p {
+		margin: 0;
 		span {
 			font-weight: bold;
 			color: #ca8a04;

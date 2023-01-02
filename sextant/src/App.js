@@ -33,9 +33,10 @@ function App() {
 export default App;
 
 const Grid = styled.div`
+	background-color: rgb(40, 40, 40);
 	display: grid;
-	grid-template-columns: 40% 40%;
+	grid-template-columns: 25% 25%;
 	gap: 50px;
-	margin: 50px 0;
+	padding: 40px 0;
 	justify-content: center;
 `;

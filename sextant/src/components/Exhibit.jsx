@@ -1,12 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import latency from '../assets/latency.png';
 
 export const Exhibit = ({ children, heading, forStrem }) => {
 	if (forStrem) {
 		return (
 			<LatencyContainer>
-				<h2>{heading} </h2>
-				{children}
+				<div>
+					<img src={latency} alt="" />
+				</div>
+
+				<div className="content">
+					<h2>{heading} </h2>
+					<p>How long the packet took to traverse the network </p>
+					{children}
+				</div>
 			</LatencyContainer>
 		);
 	}
@@ -15,40 +23,55 @@ export const Exhibit = ({ children, heading, forStrem }) => {
 		<Container>
 			<h2>{heading} </h2>
 
-			{children}
+			<div className="children">{children}</div>
 		</Container>
 	);
 };
 
 const Container = styled.div`
-	background-color: #2d2c2c;
-	height: 30vh;
+	background-color: rgb(35, 35, 35);
+	height: 15vh;
 	border-radius: 10px;
-	border: 1px solid #525252;
-	display: grid;
-	grid-template-columns: 40% 60%;
-	place-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	h2 {
 		margin: 0;
-		color: white;
+		padding: 0;
+		color: #ca8a04;
 		text-transform: uppercase;
-		font-size: 2.5rem;
-		background-color: #ca8a04;
-		width: 100%;
-		height: 100%;
-		border-radius: 10px 0 0 10px;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
+		font-size: 2rem;
 	}
 `;
 
 const LatencyContainer = styled.div`
-	background-color: white;
-	color: rgb(36, 36, 36);
-	padding: 30px 0;
-	h2 {
-		font-size: 1.5rem;
-		color: rgb(91, 88, 88);
+	display: grid;
+	grid-template-columns: 30% 70%;
+	color: white;
+	background-color: rgb(27, 27, 27);
+	height: 30vh;
+	overflow: hidden;
+	img {
+		height: 100%;
+		width: 100%;
+	}
+	.content {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: start;
+		padding-left: 20px;
+		h2 {
+			font-size: 2rem;
+			color: rgb(167, 162, 162);
+			text-transform: uppercase;
+			margin: 0;
+			padding: 0;
+		}
+		p {
+			color: rgb(167, 162, 162);
+			margin: 0 0 20px 0;
+			padding: 0;
+		}
 	}
 `;
