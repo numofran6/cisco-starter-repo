@@ -7,7 +7,7 @@ export const Banner = () => {
 			<img src={cisco} alt="" />
 
 			<div className="description">
-				<h1>SEXTANT</h1>
+				<h1>Sextant.</h1>
 				<p>
 					A network dashboard created to assist field technicians in their
 					day-to-day operations
@@ -20,26 +20,27 @@ export const Banner = () => {
 const Container = styled.div`
 	color: darkgray;
 	position: relative;
-	height: 65vh;
+	height: 70vh;
 	text-align: right;
 	img {
 		height: 100%;
 		width: 100%;
 		object-fit: fill;
-		opacity: 0.6;
+		opacity: 1;
 	}
 	.description {
 		position: absolute;
 		bottom: 10px;
 		right: 60px;
 		h1 {
-			font-size: 5rem;
+			font-size: 6.2rem;
 			margin: 0;
 			letter-spacing: 10px;
-			color: white;
+			color: #bb5cbb;
 		}
 		p {
 			margin: 0;
+			color: #e0b9e0;
 		}
 	}
 `;

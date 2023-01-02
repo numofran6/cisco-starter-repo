@@ -38,7 +38,7 @@ const Container = styled.div`
 	h2 {
 		margin: 0;
 		padding: 0;
-		color: #ca8a04;
+		color: #beb3be;
 		text-transform: uppercase;
 		font-size: 2rem;
 	}
