@@ -37,6 +37,7 @@ const Container = styled.div`
 	p {
 		margin: 0;
 		font-weight: bold;
+		padding: 0 15px;
 		span {
 			font-weight: bolder;
 			color: #bb5cbb;

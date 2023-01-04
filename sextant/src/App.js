@@ -33,10 +33,30 @@ function App() {
 export default App;
 
 const Grid = styled.div`
-	background-color: rgb(40, 40, 40);
-	display: grid;
-	grid-template-columns: 25% 25%;
-	gap: 50px;
-	padding: 40px 0;
-	justify-content: center;
+	@media screen and (min-width: 1050px) {
+		background-color: rgb(40, 40, 40);
+		display: grid;
+		grid-template-rows: 40% 40%;
+		gap: 30px;
+		padding-top: 12px;
+		justify-items: center;
+	}
+
+	@media screen and (min-width: 640px) and (max-width: 1050px) {
+		background-color: rgb(40, 40, 40);
+		display: grid;
+		grid-template-rows: 40% 40%;
+		gap: 30px;
+		padding: 40px;
+		justify-content: center;
+	}
+
+	@media screen and (min-width: 0px) and (max-width: 640px) {
+		background-color: rgb(40, 40, 40);
+		display: grid;
+		grid-template-rows: 40% 40%;
+		gap: 30px;
+		padding: 40px;
+		justify-content: center;
+	}
 `;

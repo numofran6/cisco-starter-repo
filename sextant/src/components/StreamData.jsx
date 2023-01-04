@@ -16,6 +16,14 @@ export const StreamData = () => {
 };
 
 const Container = styled.div`
-	font-size: 2rem;
-	font-weight: bold;
+	@media screen and (min-width: 640px) {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	@media screen and (min-width: 0px) and (max-width: 640px) {
+		font-size: 1.5rem;
+		font-weight: bold;
+		padding-bottom: 5px;
+	}
 `;
